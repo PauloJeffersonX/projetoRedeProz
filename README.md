@@ -54,17 +54,6 @@ Este projeto consiste na criação e configuração de uma instância Amazon EC2
         ```
         (Substitua `/dev/xvdf` pelo nome do dispositivo correto)
 
-    *   Para que a montagem seja persistente após reinicializações, adicionamos uma entrada no arquivo `/etc/fstab`:
-
-        ```bash
-        sudo nano /etc/fstab
-        ```
-        Adicione a seguinte linha (ajuste o nome do dispositivo conforme necessário):
-
-        ```
-        /dev/xvdf  /data   ext4    defaults,nofail        0       2
-        ```
-
     * Teste a montagem:
     ```bash
     sudo mount -a
